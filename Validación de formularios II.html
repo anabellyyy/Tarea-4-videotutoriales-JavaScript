@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de formularios II</title>
+    <head>
+    <style type="text/css">
+        *{font-family:arial;}
+        #titulo {text-align: center}
+        #aviso {color:red;}
+        #capaformulario {
+            height:300px;
+            background-color:grey;
+            border-radius:15 px;
+            width: 80%;
+            margin:auto;
+            padding:20px;}
+        label {color:orange}
+        input {border: 1px solid blue;border-radius:4px}
+
+
+    </style>
+           
+    </head>
+    <script>
+        function validaFormulario() {
+            var aviso = document.getElementById("aviso");
+            var nombre=document.getElementById("nombre");
+            if (nombre.value.length==0 ){
+                aviso.innerHTML = "El nombre no puede ser vacio";
+             return false;
+            }
+            return true;
+        }
+
+
+    </script>
+<body>
+
+   <h1 id="titulo">Formulario de inscripción</h1>
+    <h5 id="aviso"></h5>
+    <div id="capaformulario">
+    
+    <label for="nombre">Nombre:</label>      
+    <input type="text" name="nombre" id="nombre"><br>
+    <p></p>
+     <label for="fecha">Fecha de inscripción:</label>
+     <input type="date" name="fecha" id="fecha"><br>
+     <input type="submit" name="submit" id="submit"><br>
+</div>
+
+
+</form>
+
+
+    <h2>Aprendiendo a validar formularios II</h2>
+</body>
+</html>

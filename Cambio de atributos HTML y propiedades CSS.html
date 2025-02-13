@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de atribulos</title>
+    <style>
+        #caja {border:3px solid red; padding: 20px;}
+
+    </style>
+    <script>
+        function cambiaImagen (){
+            var imagen=document.getElementById("imagen");
+            imagen.width = imagen.width + 100;
+        }
+            
+            
+        
+</script>
+</head>
+
+<body>
+    
+
+<button onclick="cambiaImagen()">Cambiar ancho imagen</button>
+
+<div id="caja">contenido caja</div>
+<img id="imagen" src="imagen1.jfif" width="200" height="300">/<img>
+<h3>
+
+    como cambiar los atributos, cambio ancho de imagen
+</h3>
+
+</body>
+</html>
+   

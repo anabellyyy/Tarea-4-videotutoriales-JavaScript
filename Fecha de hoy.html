@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas de hoy</title>
+    <script>
+        function procesaFecha (){
+            var fechaStr = document.getElementById("fecha").value;
+            var fechaDate = new Date(fechaStr);
+            var diaMes = fechaDate.getDate();
+            alert("dia del mes: " + diaMes);
+        }
+          
+        
+        
+    </script>
+</head>
+<body>
+
+<h1>fecha de hoy</h1>
+<label for="fecha">Fecha:</label>
+<input type="date" name="fecha" id="fecha"><br>
+<button onclick="procesaFecha()">Procesa fecha</button>
+
+
+</body>
+</html>

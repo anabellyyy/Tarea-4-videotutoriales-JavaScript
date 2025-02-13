@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document write y className</title>
+    <style>
+     .importante {background-color: yellow;
+    color: blueviolet;font-size: 30px; ;}
+    </style>
+    <script>
+        function aplicaClase (){
+         document.getElementById("titulo")
+            .className="importante"; 
+
+        }
+
+</script>
+</head>
+
+<body>
+<h1 id="titulo">Título inicial</h1>    
+<button onclick="aplicaClase()">Aplicar clase</button>
+<h3>Vemos el tutorial para poder cambiar write y className</h3>
+
+</body>
+</html>
+   
